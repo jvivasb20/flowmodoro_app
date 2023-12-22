@@ -1,0 +1,30 @@
+name: flowmodoro_app
+description: 'A new Flutter project.'
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # core
+  get: ^4.6.6 # For state management
+  # data
+
+  # domain
+
+  # presentation
+  cupertino_icons: ^1.0.6 # For icons
+  google_fonts: ^6.1.0 # For google fonts
+  flutter_screenutil: ^5.9.0 # For responsive UI
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
