@@ -1,27 +1,33 @@
 part of 'constants.dart';
 
-class AppThemeLight {
-  static ThemeData appThemeDataLight(BuildContext context) {
+class AppTheme {
+  static ThemeData appThemeData(BuildContext context) {
     final textStyleBase = GoogleFonts.poppins(
-      color: Colors.black,
+      color: kColorWhite,
     );
 
-    return ThemeData.light().copyWith(
-        colorScheme: ThemeData.light().colorScheme.copyWith(
-              primary: kColorPurple,
-              secondary: kColorBlue,
-              background: kColorWhite,
+    return ThemeData().copyWith(
+        colorScheme: ThemeData().colorScheme.copyWith(
+              primary: kColorPurpleLight,
+              secondary: kColorBlueLight,
             ),
+        appBarTheme: ThemeData().appBarTheme.copyWith(
+              backgroundColor: Colors.transparent,
+              elevation: 0,
+              iconTheme: const IconThemeData(color: kColorWhite),
+            ),
+        scaffoldBackgroundColor: kColorPurpleLight,
+        iconTheme: const IconThemeData(color: kColorWhite),
         textTheme: GoogleFonts.latoTextTheme().copyWith(
           // Display
           displayLarge: textStyleBase.copyWith(
-            fontSize: 24.sp,
+            fontSize: 40.sp,
           ),
           displayMedium: textStyleBase.copyWith(
-            fontSize: 22.sp,
+            fontSize: 36.sp,
           ),
           displaySmall: textStyleBase.copyWith(
-            fontSize: 20.sp,
+            fontSize: 32.sp,
           ),
           // Headline
           headlineLarge: textStyleBase.copyWith(

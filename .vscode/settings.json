@@ -1,3 +1,8 @@
 {
-  "conventionalCommits.scopes": ["fullstack", "backend", "frontend"]
+  "conventionalCommits.scopes": ["fullstack", "backend", "frontend"],
+  "dart.lineLength": 120,
+  "[dart]": {
+    "editor.rulers": [120]
+  },
+  "cSpell.words": ["flowmodoro", "Flowmodoro"]
 }
